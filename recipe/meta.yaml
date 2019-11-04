@@ -1,6 +1,7 @@
 {% set name = "bravado" %}
 {% set version = "10.4.3" %}
 
+
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
@@ -11,7 +12,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
 requirements:
