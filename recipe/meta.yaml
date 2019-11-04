@@ -1,5 +1,6 @@
 {% set name = "bravado" %}
-{% set version = "10.4.2" %}
+{% set version = "10.4.3" %}
+
 
 package:
   name: "{{ name|lower }}"
@@ -7,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 48c366df9bd8e4591d42ab9b51c699df45f24c447c5a0429cec684165e7bd065
+  sha256: 517487d63046864ce55a24e04d94e06fe4102a8c41d27333d145954171955986
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
 requirements:
