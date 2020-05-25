@@ -3,7 +3,7 @@ About bravado
 
 Home: https://github.com/Yelp/bravado
 
-Package license: BSD
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
