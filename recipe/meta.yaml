@@ -1,5 +1,5 @@
 {% set name = "bravado" %}
-{% set version = "10.6.0" %}
+{% set version = "10.6.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f1e81041f1e48478cce4e6805d57572b29ad2cf3187aae393c4eb3a2b8a053c2
+  sha256: 202af8fe621a4dc3f0e58047e2dcdd6019e710793c2e0ea9b75c95ac47d4a6c5
 
 build:
   number: 0
@@ -17,24 +17,19 @@ build:
 
 requirements:
   host:
-    - bravado-core >=5.0.1
-    - monotonic
-    - msgpack-python
     - pip
     - python
-    - python-dateutil
-    - pyyaml
-    - requests >=2.4
-    - six
   run:
-    - bravado-core >=5.0.1
+    - bravado-core >=5.16.1
     - monotonic
     - msgpack-python
     - python
     - python-dateutil
     - pyyaml
-    - requests >=2.4
+    - requests >=2.17
+    - simplejson
     - six
+    - typing-extensions
 
 test:
   imports:
@@ -43,7 +38,7 @@ test:
 
 about:
   home: https://github.com/Yelp/bravado
-  license: BSD
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
   summary: Library for accessing Swagger-enabled API's
