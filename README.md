@@ -5,11 +5,9 @@ Home: https://github.com/Yelp/bravado
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bravado-feedstock/blob/master/LICENSE.txt)
 
 Summary: Library for accessing Swagger-enabled API's
-
-
 
 Current build status
 ====================
