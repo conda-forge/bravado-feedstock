@@ -1,5 +1,5 @@
 {% set name = "bravado" %}
-{% set version = "11.0.2" %}
+{% set version = "11.0.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4dd64288a5230f2a1333d65dee6a6774821338f8329eb56293f9f24c73e33ed8
+  sha256: 1bb6ef75d84140c851fffe6420baaee5037d840070cfe11d60913be6ab8e0530
 
 build:
   number: 0
@@ -18,12 +18,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - bravado-core >=5.16.1
     - monotonic
     - msgpack-python
-    - python
+    - python >=3.6
     - python-dateutil
     - pyyaml
     - requests >=2.17
