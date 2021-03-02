@@ -18,12 +18,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - bravado-core >=5.16.1
     - monotonic
     - msgpack-python
-    - python
+    - python >=3.6
     - python-dateutil
     - pyyaml
     - requests >=2.17
