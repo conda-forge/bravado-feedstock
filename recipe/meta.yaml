@@ -1,5 +1,5 @@
 {% set name = "bravado" %}
-{% set version = "11.0.3" %}
+{% set version = "11.1.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1bb6ef75d84140c851fffe6420baaee5037d840070cfe11d60913be6ab8e0530
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: f88a6e8a7aa15d947fa8abc8c601cf3da6720b84755254f4a15cfda9419a1990
 
 build:
   number: 0
